@@ -1,0 +1,380 @@
+body {
+  margin: 0;
+  background: #f5f5f7;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+h1, p {
+  text-align: center;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, .08);
+}
+
+.progress {
+  width: 100%;
+  height: 10px;
+  background: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 15px 0;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #34C759;
+}
+
+.btn-reservar {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background: #007AFF;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-reservar:hover {
+  opacity: .9;
+}
+
+.info {
+
+  margin: 12px 0;
+
+  color: #555;
+
+}
+
+.contador {
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 15px;
+
+  margin-top: 15px;
+
+}
+
+.contador button {
+
+  width: 42px;
+
+  height: 42px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: #007AFF;
+
+  color: white;
+
+  font-size: 24px;
+
+  cursor: pointer;
+
+}
+
+.contador button:hover {
+
+  opacity: .9;
+
+}
+
+.qtd {
+
+  width: 40px;
+
+  text-align: center;
+
+  font-size: 22px;
+
+  font-weight: bold;
+
+}
+
+.resumo {
+
+  position: sticky;
+
+  bottom: 20px;
+
+  margin-top: 30px;
+
+}
+
+#btnContinuar {
+
+  width: 100%;
+
+  padding: 16px;
+
+  border: none;
+
+  border-radius: 14px;
+
+  background: #34C759;
+
+  color: white;
+
+  font-size: 18px;
+
+  cursor: pointer;
+
+}
+
+#btnContinuar:disabled {
+
+  background: #C7C7CC;
+
+  cursor: not-allowed;
+
+}
+
+.linha {
+
+  display: flex;
+
+  gap: 20px;
+
+  align-items: center;
+
+}
+
+.progress {
+
+  flex: 1;
+
+  height: 12px;
+
+  background: #ddd;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+}
+
+.progress-fill {
+
+  height: 100%;
+
+  background: #34C759;
+
+}
+
+.contador {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+}
+
+.contador button {
+
+  width: 36px;
+
+  height: 36px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: #007AFF;
+
+  color: white;
+
+  font-size: 22px;
+
+  cursor: pointer;
+
+}
+
+.contador span {
+
+  width: 25px;
+
+  text-align: center;
+
+  font-weight: bold;
+
+}
+
+.campanha-status {
+
+  background: #fff;
+
+  padding: 20px;
+
+  border-radius: 16px;
+
+  margin-bottom: 25px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, .08);
+
+}
+
+.status-header {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 12px;
+
+  font-weight: 600;
+
+}
+
+.status-header strong {
+
+  color: #34C759;
+
+  font-size: 18px;
+
+}
+
+.status-bar {
+
+  width: 100%;
+
+  height: 14px;
+
+  background: #E5E5EA;
+
+  border-radius: 30px;
+
+  overflow: hidden;
+
+}
+
+.status-fill {
+
+  height: 100%;
+
+  background: #34C759;
+
+  transition: width .4s ease;
+
+}
+
+.campanha-status small {
+
+  display: block;
+
+  margin-top: 10px;
+
+  color: #666;
+
+}
+
+.status-texto {
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-top: 12px;
+
+  font-size: 15px;
+
+  flex-wrap: wrap;
+
+}
+
+.status-ok {
+
+  color: #34C759;
+
+  font-weight: 600;
+
+}
+
+.status-falta {
+
+  color: #FF9500;
+
+  font-weight: 600;
+
+}
+
+.status-separador {
+
+  color: #999;
+
+}
+
+.card.esgotado {
+
+  background: #F2F2F7;
+
+  opacity: .75;
+
+  border: 2px solid #34C759;
+
+}
+
+.badge-esgotado {
+
+  float: right;
+
+  background: #34C759;
+
+  color: white;
+
+  padding: 4px 10px;
+
+  border-radius: 20px;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+}
+
+.card.esgotado .progress-fill {
+
+  background: #34C759;
+
+}
+
+.card.esgotado button {
+
+  background: #D1D1D6;
+
+  cursor: not-allowed;
+
+}
+
+.card {
+
+  transition: .35s;
+
+}
